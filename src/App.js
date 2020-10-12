@@ -1,10 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <AppContainer className="App">
       Our Pricing
       Annually
       Monthly
@@ -34,8 +35,16 @@ function App() {
       Learn More
 
       <Footer />
-    </div>
+    </AppContainer>
   );
 }
+
+const AppContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+`
 
 export default App;
