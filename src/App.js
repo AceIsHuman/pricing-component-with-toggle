@@ -45,6 +45,9 @@ const AppContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  font-family: sans-serif;
 `
 
 export default App;
