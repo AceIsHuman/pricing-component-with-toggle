@@ -1,15 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <AppContainer className="App">
-      Our Pricing
-      Annually
-      Monthly
-
+    <AppContainer>
+      <Header />
       Basic
       &dollar;19.99
       &dollar;199.99
