@@ -22,6 +22,7 @@ const Switch = styled.label`
   display: inline-block;
   width: 3.1rem;
   height: 1.6rem;
+  margin: 0 0.5rem;
 `
 
 const Checkbox = styled.input`
