@@ -4,18 +4,6 @@ import styled from 'styled-components';
 import ToggleSwitch from './ToggleSwitch';
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { toggled: true };
-
-    // allow `this` to work in the callback
-    this.setToggled = this.setToggled.bind(this);
-  }
-
-  setToggled() {
-    this.setState(state => ({ toggled: !state.toggled }));
-  }
-
   render() {
     return (
       <>
@@ -23,8 +11,8 @@ class Header extends React.Component {
         <ToggleContainer>
           <Option>Annually</Option>
           <ToggleSwitch
-            toggled={this.state.toggled}
-            setToggled={this.setToggled}
+            toggled={this.props.toggled}
+            setToggled={this.props.setToggled}
           />
           <Option>Monthly</Option>
         </ToggleContainer>
