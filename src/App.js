@@ -5,6 +5,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import PricingCard from './components/PricingCard';
 
+import bgBottom from './images/bg-bottom.svg';
+import bgTop from './images/bg-top.svg';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -21,6 +24,8 @@ class App extends React.Component {
   render() {
     return (
       <AppContainer>
+        <BgBottom src={bgBottom} alt="background-bottom" />
+        <BgTop src={bgTop} alt="background-top" />
         <Header toggled={this.state.toggled} setToggled={this.setToggled} />
         <CardContainer>
           <PricingCard
@@ -68,6 +73,9 @@ const AppContainer = styled.div`
   text-align: center;
   flex-direction: column;
   font-family: sans-serif;
+  background-color: #e7e7ff;
+  position: relative;
+  z-index: -2;
 `;
 
 const CardContainer = styled.div`
@@ -75,6 +83,19 @@ const CardContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 80%;
+`;
+
+const BgTop = styled.img`
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+`;
+const BgBottom = styled.img`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 `;
 
 export default App;
