@@ -10,8 +10,8 @@ class PricingComponent extends React.Component {
       >
         <Header>
           <Title>{this.props.tier}</Title>
-          <Price dataPlan="monthly">{this.props.monthlyPrice}</Price>
-          <Price dataPlan="annually">{this.props.annualPrice}</Price>
+          <Price dataPlan="monthly" hidden={!this.props.toggled}>{this.props.monthlyPrice}</Price>
+          <Price dataPlan="annually" hidden={this.props.toggled}>{this.props.annualPrice}</Price>
         </Header>
         <Detail>{this.props.storage}</Detail>
         <Detail>{this.props.users}</Detail>
