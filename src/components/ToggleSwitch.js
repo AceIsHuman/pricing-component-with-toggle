@@ -10,7 +10,7 @@ class ToggleSwitch extends React.Component {
   render() {
     return (
       <Switch>
-        <Checkbox type="checkbox" checked={this.props.toggled} onClick={this.props.setToggled} />
+        <Checkbox type="checkbox" checked={this.props.toggled} onChange={this.props.setToggled} />
         <Slider />
       </Switch>
     )
