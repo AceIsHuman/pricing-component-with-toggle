@@ -24,6 +24,7 @@ class App extends React.Component {
   render() {
     return (
       <AppContainer>
+        <Background />
         <BgBottom src={bgBottom} alt="background-bottom" />
         <BgTop src={bgTop} alt="background-top" />
         <Header toggled={this.state.toggled} setToggled={this.setToggled} />
@@ -73,9 +74,6 @@ const AppContainer = styled.div`
   text-align: center;
   flex-direction: column;
   font-family: sans-serif;
-  background-color: #e7e7ff;
-  position: relative;
-  z-index: -2;
 `;
 
 const CardContainer = styled.div`
@@ -96,6 +94,14 @@ const BgBottom = styled.img`
   bottom: 0;
   left: 0;
   z-index: -1;
+`;
+
+const Background = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #e7e7ff;
+  z-index: -2;
 `;
 
 export default App;
