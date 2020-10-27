@@ -10,8 +10,12 @@ class PricingComponent extends React.Component {
       >
         <Header>
           <Title>{this.props.tier}</Title>
-          <Price dataPlan="monthly" hidden={!this.props.toggled}>{this.props.monthlyPrice}</Price>
-          <Price dataPlan="annually" hidden={this.props.toggled}>{this.props.annualPrice}</Price>
+          <Price dataPlan="monthly" hidden={!this.props.toggled}>
+            {this.props.monthlyPrice}
+          </Price>
+          <Price dataPlan="annually" hidden={this.props.toggled}>
+            {this.props.annualPrice}
+          </Price>
         </Header>
         <Detail>{this.props.storage}</Detail>
         <Detail>{this.props.users}</Detail>
@@ -21,10 +25,13 @@ class PricingComponent extends React.Component {
   }
 }
 
-const divider = `content: "";
-width: 100%;
-height: 0.1rem;
-background-color: #aaaaaa;`;
+const divider = `
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #bbbbbb;
+  margin-top: 1rem;
+`;
 
 const Card = styled.div`
   width: 25%;
@@ -34,17 +41,24 @@ const Card = styled.div`
   background: ${(props) => (props.background ? props.background : '#ffffff')};
   padding: ${(props) => (props.centerCard ? '2rem 1rem' : '1rem')};
   text-align: center;
+  border-radius: 1rem;
+  color: ${(props) => (props.centerCard ? '#ffffff' : 'initial')};
 `;
 
 const Header = styled.div`
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
   &::after {
     ${divider}
   }
 `;
 
 const Title = styled.h4`
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
+  padding-bottom: 1rem;
 `;
 
 const Price = styled.span`
@@ -58,7 +72,11 @@ const Price = styled.span`
 `;
 
 const Detail = styled.p`
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
   &::after {
     ${divider}
   }
