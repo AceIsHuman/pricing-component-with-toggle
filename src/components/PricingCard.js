@@ -73,6 +73,12 @@ const Price = styled.span`
   font-size: 3rem;
   font-weight: 500;
 
+  &:not([hidden]) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &::before {
     content: '$';
     font-size: 2rem;
