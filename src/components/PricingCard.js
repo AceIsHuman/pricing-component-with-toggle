@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from './forms/Button';
 
 class PricingComponent extends React.Component {
   render() {
@@ -20,6 +21,9 @@ class PricingComponent extends React.Component {
         <Detail>{this.props.storage}</Detail>
         <Detail>{this.props.users}</Detail>
         <Detail>{this.props.limit}</Detail>
+        <Button background={this.props.centerCard ? '#fff' : null} color={this.props.centerCard ? 'rgb(151,156,237)' : null}>
+          Learn More
+        </Button>
       </Card>
     );
   }
@@ -49,7 +53,7 @@ const Card = styled.div`
   }
 
   &:nth-child(3) {
-    border-radius:  0 1rem 1rem 0;
+    border-radius: 0 1rem 1rem 0;
   }
 `;
 
