@@ -21,7 +21,11 @@ class PricingComponent extends React.Component {
         <Detail>{this.props.storage}</Detail>
         <Detail>{this.props.users}</Detail>
         <Detail>{this.props.limit}</Detail>
-        <Button background={this.props.centerCard ? '#fff' : null} color={this.props.centerCard ? 'rgb(151,156,237)' : null}>
+        <Button
+          background={this.props.centerCard ? '#fff' : null}
+          color={this.props.centerCard ? 'rgb(151,156,237)' : null}
+          width='90%'
+        >
           Learn More
         </Button>
       </Card>
@@ -91,10 +95,10 @@ const Price = styled.span`
 
 const Detail = styled.p`
   font-size: 1.2rem;
-  padding: 0.5rem 0;
   display: flex;
   flex-direction: column;
   width: 90%;
+  margin-bottom: 1rem;
   &::after {
     ${divider}
   }
