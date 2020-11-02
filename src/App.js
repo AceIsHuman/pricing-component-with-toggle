@@ -45,7 +45,7 @@ class App extends React.Component {
             storage="1 TB Storage"
             users="5 Users Allowed"
             limit="Send up to 10 GB"
-            background="rgb(151,156,237)"
+            background="linear-gradient(to bottom, rgb(151,156,237), rgb(101,106,187))"
             centerCard
             toggled={this.state.toggled}
           />
