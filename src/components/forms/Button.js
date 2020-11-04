@@ -10,6 +10,18 @@ const Button = styled.button`
   color: ${(props) => props.color || '#ffffff'};
   border-radius: 0.4rem;
   font-variant: all-petite-caps;
+  border: 1px rgba(0, 0, 0, 0) solid;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    background: none;
+    border: 1px ${(props) => props.background || 'rgba(151,156,237,1)'} solid;
+    color: ${(props) => props.background || 'rgb(151,156,237)'};
+  }
 `;
 
 export default Button;
