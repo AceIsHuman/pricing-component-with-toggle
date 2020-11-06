@@ -78,8 +78,8 @@ const Title = styled.h4`
 `;
 
 const Price = styled.span`
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 3.4rem;
+  font-weight: 600;
 
   &:not([hidden]) {
     display: flex;
