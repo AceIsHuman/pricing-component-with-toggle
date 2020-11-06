@@ -95,7 +95,9 @@ const Price = styled.span`
 `;
 
 const Detail = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-kerning: none;
   display: flex;
   flex-direction: column;
   width: 90%;
