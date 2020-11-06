@@ -90,6 +90,7 @@ const Price = styled.span`
   &::before {
     content: '$';
     font-size: 2rem;
+    margin-right: 0.4rem;
   }
 `;
 
