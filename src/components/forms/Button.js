@@ -9,7 +9,10 @@ const Button = styled.button`
     'linear-gradient(to right, rgb(151,156,237), rgb(101,106,187))'};
   color: ${(props) => props.color || '#ffffff'};
   border-radius: 0.4rem;
-  font-variant: all-petite-caps;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
   border: 1px rgba(0, 0, 0, 0) solid;
   transition: 0.3s;
 
