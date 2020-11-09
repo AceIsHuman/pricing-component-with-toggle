@@ -84,13 +84,13 @@ const CardContainer = styled.div`
 `;
 
 const BgTop = styled.img`
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: -1;
 `;
 const BgBottom = styled.img`
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   z-index: -1;
