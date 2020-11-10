@@ -37,6 +37,10 @@ const Attribution = styled.div`
   & a {
     color: hsl(228, 45%, 44%);
   }
+
+  @media (max-width: 500px) {
+    position: relative;
+  }
 `;
 
 export default Footer;
