@@ -34,7 +34,6 @@ const ToggleContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
   margin-bottom: 2rem;
 `;
 
