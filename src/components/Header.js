@@ -25,6 +25,9 @@ const Title = styled.h2`
   color: #5f5f5f;
   font-size: 3rem;
   margin-bottom: 1rem;
+  @media (max-width: 500px) {
+    margin-top: 2rem;
+  }
 `;
 
 const ToggleContainer = styled.div`
