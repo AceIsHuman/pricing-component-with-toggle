@@ -52,12 +52,19 @@ const Card = styled.div`
   border-radius: 1rem;
   color: ${(props) => (props.centerCard ? '#ffffff' : 'initial')};
 
-  &:nth-child(1) {
-    border-radius: 1rem 0 0 1rem;
+  @media (min-width: 800px) {
+    &:nth-child(1) {
+      border-radius: 1rem 0 0 1rem;
+    }
+  
+    &:nth-child(3) {
+      border-radius: 0 1rem 1rem 0;
+    }
   }
 
-  &:nth-child(3) {
-    border-radius: 0 1rem 1rem 0;
+  @media (max-width: 500px) {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 `;
 
