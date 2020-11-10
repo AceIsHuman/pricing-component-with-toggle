@@ -70,10 +70,14 @@ const AppContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   flex-direction: column;
   font-family: sans-serif;
+
+  @media (max-width: 500px) {
+    justify-content: flex-start;
+  }
 `;
 
 const CardContainer = styled.div`
@@ -81,6 +85,10 @@ const CardContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 80%;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 
 const BgTop = styled.img`
@@ -88,12 +96,22 @@ const BgTop = styled.img`
   top: 0;
   right: 0;
   z-index: -1;
+
+  @media (max-width: 500px) {
+    width: 75%;
+    height: 75%;
+    right: -30%;
+  }
 `;
 const BgBottom = styled.img`
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: -1;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Background = styled.div`
