@@ -86,6 +86,9 @@ const CardContainer = styled.div`
   align-items: center;
   width: 80%;
 
+  @media (max-width: 1000px) {
+    width: 95%;
+  }
   @media (max-width: 500px) {
     flex-direction: column;
   }
