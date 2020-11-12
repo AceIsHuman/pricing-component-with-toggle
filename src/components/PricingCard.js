@@ -62,7 +62,7 @@ const Card = styled.div`
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     margin-bottom: 1rem;
   }
 `;
