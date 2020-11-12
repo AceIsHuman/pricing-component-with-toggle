@@ -38,7 +38,7 @@ const Attribution = styled.div`
     color: hsl(228, 45%, 44%);
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     position: relative;
   }
 `;
