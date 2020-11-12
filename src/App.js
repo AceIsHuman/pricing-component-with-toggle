@@ -75,7 +75,7 @@ const AppContainer = styled.div`
   flex-direction: column;
   font-family: sans-serif;
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     justify-content: flex-start;
   }
 `;
@@ -89,7 +89,7 @@ const CardContainer = styled.div`
   @media (max-width: 1000px) {
     width: 95%;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     flex-direction: column;
   }
 `;
@@ -100,7 +100,7 @@ const BgTop = styled.img`
   right: 0;
   z-index: -1;
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     width: 75%;
     height: 75%;
     right: -30%;
@@ -112,7 +112,7 @@ const BgBottom = styled.img`
   left: 0;
   z-index: -1;
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     display: none;
   }
 `;
