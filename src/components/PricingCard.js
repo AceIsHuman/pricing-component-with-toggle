@@ -24,7 +24,7 @@ class PricingComponent extends React.Component {
         <Button
           background={this.props.centerCard ? '#fff' : null}
           color={this.props.centerCard ? 'rgb(151,156,237)' : null}
-          width='90%'
+          width="90%"
         >
           Learn More
         </Button>
@@ -42,28 +42,27 @@ const divider = `
 `;
 
 const Card = styled.div`
-  width: 25%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: ${(props) => (props.background ? props.background : '#ffffff')};
-  padding: ${(props) => (props.centerCard ? '2rem 1rem' : '1rem')};
+  background: ${props => (props.background ? props.background : '#ffffff')};
+  padding: ${props => (props.centerCard ? '2rem 1rem' : '1rem')};
   text-align: center;
   border-radius: 1rem;
-  color: ${(props) => (props.centerCard ? '#ffffff' : 'initial')};
+  color: ${props => (props.centerCard ? '#ffffff' : 'initial')};
 
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     &:nth-child(1) {
       border-radius: 1rem 0 0 1rem;
     }
-  
+
     &:nth-child(3) {
       border-radius: 0 1rem 1rem 0;
     }
   }
 
   @media (max-width: 500px) {
-    width: 100%;
     margin-bottom: 1rem;
   }
 `;
